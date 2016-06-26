@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## [Repos](https://github.com/iOS-10-Stuffs)
+## [Repo's](https://github.com/iOS-10-Stuffs)
 
 ### [Runtime Headers](https://github.com/iOS-10-Stuffs/iOS10-Runtime-Headers)
 Here you can find the iOS 10 Objective-C headers as derived from runtime introspection.
