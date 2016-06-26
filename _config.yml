@@ -1,0 +1,13 @@
+permalink:           pretty
+
+title:               iOS Hacker Wiki
+url:                 https://ioshackerwiki.com
+baseurl:             ""
+
+author:
+  name:              Jerrick Davis
+  url:               https://twitter.com/ClevrPwn
+  email:             jerrick.davis.97@gmail.com
+
+github:
+  repo:              https://github.com/iOS-10-Stuffs/iOS-10-stuffs.github.io
