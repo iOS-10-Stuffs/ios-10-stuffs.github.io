@@ -27,6 +27,6 @@ At the trap level, the interface to most Mach abstractions consists of messages 
 ## [UNIX Syscalls](syscalls/)
 A system call is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. This may include hardware-related services (for example, accessing a hard disk drive), creation and execution of new processes, and communication with integral kernel services such as process scheduling.
 
-## [Hardware info](hardware)
+## [Hardware Info](hardware)
 
 ## [Core Team](core-team/)
