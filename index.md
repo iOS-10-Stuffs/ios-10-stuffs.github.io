@@ -13,7 +13,7 @@ Decrypted iOS 10 kernels for all device families.
 
 ### [Disassembled Kernels](https://github.com/iOS-10-Stuffs/Disassembled-Kernels)
 Disassembled kernels for a few devices, more to come. Feel free to contribute for devices not included.
- 
+
 ## [Kext List](kext-list/)
 List of all the kexts included... pretty self explanatory.
 
@@ -28,3 +28,5 @@ At the trap level, the interface to most Mach abstractions consists of messages 
 A system call is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. This may include hardware-related services (for example, accessing a hard disk drive), creation and execution of new processes, and communication with integral kernel services such as process scheduling.
 
 ## [Hardware info](hardware)
+
+## [Core Team](core-team/)
