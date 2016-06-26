@@ -1,0 +1,445 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>iOS Hacker Wiki</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79852874-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title"><a href="http://ioshackerwiki.com/">iOS Hacker Wiki <a></h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/iOS-10-stuffs" class="code">View iOS Hacker Wiki on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>syscalls</h1>
+
+<p>
+<p>This is a 64-bit kernel from iOS 10.x, or later (3705.0.0.2.3)<br>
+Syscalls at address 0xfffffff0074664c8<br>
+Sysent offset in file (for patching purposes): 624c8<br>
+Suppressing enosys (fffffff00779fd74) and old (fffffff00779fd54)<br>
+1.. exit 0xfffffff007774e8c<br>
+2.. fork 0xfffffff007779424<br>
+3.. read 0xfffffff00779fda4<br>
+4.. write 0xfffffff0077a0468<br>
+5.. open 0xfffffff0075aa324<br>
+6.. close 0xfffffff00775da74<br>
+7.. wait4 0xfffffff00777622c<br>
+9.. link 0xfffffff0075ab5e4<br>
+10.. unlink 0xfffffff0075ac594<br>
+12.. chdir 0xfffffff0075a948c<br>
+13.. fchdir 0xfffffff0075a91c8<br>
+14.. mknod 0xfffffff0075aae04<br>
+15.. chmod 0xfffffff0075ae738<br>
+16.. chown 0xfffffff0075aea88<br>
+18.. getfsstat 0xfffffff0075a8a5c<br>
+20.. getpid 0xfffffff0077809d4<br>
+23.. setuid 0xfffffff007781004<br>
+24.. getuid 0xfffffff007780ad4<br>
+25.. geteuid 0xfffffff007780b2c<br>
+26.. ptrace 0xfffffff00779b690<br>
+27.. recvmsg 0xfffffff0077daa20<br>
+28.. sendmsg 0xfffffff0077d9a90<br>
+29.. recvfrom 0xfffffff0077da478<br>
+30.. accept 0xfffffff0077d820c<br>
+31.. getpeername 0xfffffff0077dbb74<br>
+32.. getsockname 0xfffffff0077dba40<br>
+33.. access 0xfffffff0075ad1f4<br>
+34.. chflags 0xfffffff0075ae0bc<br>
+35.. fchflags 0xfffffff0075ae304<br>
+36.. sync 0xfffffff0075a7cf4<br>
+37.. kill 0xfffffff0077878ec<br>
+39.. getppid 0xfffffff0077809e4<br>
+41.. dup 0xfffffff0077590ec<br>
+42.. pipe 0xfffffff0077a6d58<br>
+43.. getegid 0xfffffff007780cc8<br>
+46.. sigaction 0xfffffff007785730<br>
+47.. getgid 0xfffffff007780c70<br>
+48.. sigprocmask 0xfffffff007785e68<br>
+49.. getlogin 0xfffffff00778249c<br>
+50.. setlogin 0xfffffff007782560<br>
+51.. acct 0xfffffff007751fac<br>
+52.. sigpending 0xfffffff007786184<br>
+53.. sigaltstack 0xfffffff007787788<br>
+54.. ioctl 0xfffffff0077a0d58<br>
+55.. reboot 0xfffffff00779ab84<br>
+56.. revoke 0xfffffff0075b2260<br>
+57.. symlink 0xfffffff0075abbfc<br>
+58.. readlink 0xfffffff0075add94<br>
+59.. execve 0xfffffff007772390<br>
+60.. umask 0xfffffff0075b2208<br>
+61.. chroot 0xfffffff0075a9790<br>
+65.. msync 0xfffffff00777aba8<br>
+66.. vfork 0xfffffff007778060<br>
+73.. munmap 0xfffffff00777ac94<br>
+74.. mprotect 0xfffffff00777ad3c<br>
+75.. madvise 0xfffffff00777ae64<br>
+78.. mincore 0xfffffff00777af50<br>
+79.. getgroups 0xfffffff007780d20<br>
+80.. setgroups 0xfffffff007782434<br>
+81.. getpgrp 0xfffffff0077809f4<br>
+82.. setpgid 0xfffffff007780e44<br>
+83.. setitimer 0xfffffff00779a084<br>
+85.. swapon 0xfffffff0077f14b0<br>
+86.. getitimer 0xfffffff007799db8<br>
+89.. getdtablesize 0xfffffff007758abc<br>
+90.. dup2 0xfffffff007759904<br>
+92.. fcntl 0xfffffff00775a6b8<br>
+93.. select 0xfffffff0077a1558<br>
+95.. fsync 0xfffffff0075af954<br>
+96.. setpriority 0xfffffff007782aec<br>
+97.. socket 0xfffffff0077d6e68<br>
+98.. connect 0xfffffff0077d8240<br>
+100.. getpriority 0xfffffff0077826a8<br>
+104.. bind 0xfffffff0077d7314<br>
+105.. setsockopt 0xfffffff0077db514<br>
+106.. listen 0xfffffff0077d7670<br>
+111.. sigsuspend 0xfffffff0077861c4<br>
+116.. gettimeofday 0xfffffff007799760<br>
+117.. getrusage 0xfffffff007783dc8<br>
+118.. getsockopt 0xfffffff0077db790<br>
+120.. readv 0xfffffff0077a023c<br>
+121.. writev 0xfffffff0077a09e8<br>
+122.. settimeofday 0xfffffff0077998f8<br>
+123.. fchown 0xfffffff0075aed54<br>
+124.. fchmod 0xfffffff0075aea20<br>
+126.. setreuid 0xfffffff0077816ec<br>
+127.. setregid 0xfffffff007781ccc<br>
+128.. rename 0xfffffff0075b071c<br>
+131.. flock 0xfffffff007760070<br>
+132.. mkfifo 0xfffffff0075ab3dc<br>
+133.. sendto 0xfffffff0077d93b4<br>
+134.. shutdown 0xfffffff0077db4b4<br>
+135.. socketpair 0xfffffff0077d90a8<br>
+136.. mkdir 0xfffffff0075b18fc<br>
+137.. rmdir 0xfffffff0075b1a0c<br>
+138.. utimes 0xfffffff0075aef0c<br>
+139.. futimes 0xfffffff0075af2c8<br>
+140.. adjtime 0xfffffff007799a90<br>
+142.. gethostuuid 0xfffffff0077a4190<br>
+147.. setsid 0xfffffff007780dcc<br>
+151.. getpgid 0xfffffff007780a04<br>
+152.. setprivexec 0xfffffff0077809b4<br>
+153.. pread 0xfffffff0077a0144<br>
+154.. pwrite 0xfffffff0077a0804<br>
+157.. statfs 0xfffffff0075a8164<br>
+158.. fstatfs 0xfffffff0075a85b4<br>
+159.. unmount 0xfffffff0075a7128<br>
+165.. quotactl 0xfffffff0075a7e30<br>
+167.. mount 0xfffffff0075a6e30<br>
+169.. csops 0xfffffff00777f048<br>
+170.. csops_audittoken 0xfffffff00777fcdc<br>
+173.. waitid 0xfffffff0077767bc<br>
+177.. 177 0xfffffff00774e784<br>
+178.. kdebug_trace_string 0xfffffff00774ed5c<br>
+179.. kdebug_trace64 0xfffffff00774e994<br>
+180.. kdebug_trace 0xfffffff00774e928<br>
+181.. setgid 0xfffffff0077819a4<br>
+182.. setegid 0xfffffff007781b4c<br>
+183.. seteuid 0xfffffff007781568<br>
+184.. sigreturn 0xfffffff007811434<br>
+187.. fdatasync 0xfffffff0075afa7c<br>
+188.. stat 0xfffffff0075ada38<br>
+189.. fstat 0xfffffff00775e5d8<br>
+190.. lstat 0xfffffff0075adb10<br>
+191.. pathconf 0xfffffff0075adc5c<br>
+192.. fpathconf 0xfffffff00775e628<br>
+194.. getrlimit 0xfffffff007783b50<br>
+195.. setrlimit 0xfffffff007783390<br>
+196.. getdirentries 0xfffffff0075b1ce8<br>
+197.. mmap 0xfffffff007779eb8<br>
+199.. lseek 0xfffffff0075acadc<br>
+200.. truncate 0xfffffff0075af3b8<br>
+201.. ftruncate 0xfffffff0075af59c<br>
+202.. __sysctl 0xfffffff00778f198<br>
+203.. mlock 0xfffffff00777b128<br>
+204.. munlock 0xfffffff00777b1dc<br>
+205.. undelete 0xfffffff0075ac038<br>
+216.. mkcomplex 0xfffffff0075aa194<br>
+220.. getattrlist 0xfffffff007585e28<br>
+221.. setattrlist 0xfffffff007586de0<br>
+222.. getdirentriesattr 0xfffffff0075b24a4<br>
+223.. exchangedata 0xfffffff0075b28b0<br>
+225.. searchfs 0xfffffff0075b2dd8<br>
+226.. delete 0xfffffff0075ac560<br>
+227.. copyfile 0xfffffff0075afab4<br>
+228.. fgetattrlist 0xfffffff007583bdc<br>
+229.. fsetattrlist 0xfffffff007587a8c<br>
+230.. poll 0xfffffff0077a2804<br>
+231.. watchevent 0xfffffff0077a3544<br>
+232.. waitevent 0xfffffff0077a3890<br>
+233.. modwatch 0xfffffff0077a3bbc<br>
+234.. getxattr 0xfffffff0075b4974<br>
+235.. fgetxattr 0xfffffff0075b4c00<br>
+236.. setxattr 0xfffffff0075b4dfc<br>
+237.. fsetxattr 0xfffffff0075b4ffc<br>
+238.. removexattr 0xfffffff0075b51fc<br>
+239.. fremovexattr 0xfffffff0075b5388<br>
+240.. listxattr 0xfffffff0075b54fc<br>
+241.. flistxattr 0xfffffff0075b56b0<br>
+242.. fsctl 0xfffffff0075b32cc<br>
+243.. initgroups 0xfffffff0077821e0<br>
+244.. posix_spawn 0xfffffff00776f254<br>
+245.. ffsctl 0xfffffff0075b486c<br>
+250.. minherit 0xfffffff00777ae24<br>
+266.. shm_open 0xfffffff0077e3050<br>
+267.. shm_unlink 0xfffffff0077e39c8<br>
+268.. sem_open 0xfffffff0077e1b20<br>
+269.. sem_close 0xfffffff0077e2754<br>
+270.. sem_unlink 0xfffffff0077e24d8<br>
+271.. sem_wait 0xfffffff0077e28b8<br>
+272.. sem_trywait 0xfffffff0077e2ad0<br>
+273.. sem_post 0xfffffff0077e2bfc<br>
+274.. sem_getvalue 0xfffffff00778f4a4<br>
+277.. open_extended 0xfffffff0075aa000<br>
+278.. umask_extended 0xfffffff0075b2168<br>
+279.. stat_extended 0xfffffff0075ad414<br>
+280.. lstat_extended 0xfffffff0075adadc<br>
+281.. fstat_extended 0xfffffff00775dca0<br>
+282.. chmod_extended 0xfffffff0075ae39c<br>
+283.. fchmod_extended 0xfffffff0075ae844<br>
+284.. access_extended 0xfffffff0075accfc<br>
+285.. settid 0xfffffff007781f3c<br>
+286.. gettid 0xfffffff007780b84<br>
+287.. setsgroups 0xfffffff007782448<br>
+288.. getsgroups 0xfffffff007780dbc<br>
+289.. setwgroups 0xfffffff007782450<br>
+290.. getwgroups 0xfffffff007780dc4<br>
+291.. mkfifo_extended 0xfffffff0075ab2d4<br>
+292.. mkdir_extended 0xfffffff0075b14f4<br>
+294.. shared_region_check_np 0xfffffff0077f2824<br>
+296.. vm_pressure_monitor 0xfffffff0077f388c<br>
+297.. psynch_rw_longrdlock 0xfffffff0077e96d8<br>
+298.. psynch_rw_yieldwrlock 0xfffffff0077e97a0<br>
+299.. psynch_rw_downgrade 0xfffffff0077e97d8<br>
+300.. psynch_rw_upgrade 0xfffffff0077e97d0<br>
+301.. psynch_mutexwait 0xfffffff0077e9548<br>
+302.. psynch_mutexdrop 0xfffffff0077e9578<br>
+303.. psynch_cvbroad 0xfffffff0077e95a8<br>
+304.. psynch_cvsignal 0xfffffff0077e95ec<br>
+305.. psynch_cvwait 0xfffffff0077e963c<br>
+306.. psynch_rw_rdlock 0xfffffff0077e9708<br>
+307.. psynch_rw_wrlock 0xfffffff0077e9770<br>
+308.. psynch_rw_unlock 0xfffffff0077e9738<br>
+309.. psynch_rw_unlock2 0xfffffff0077e9768<br>
+310.. getsid 0xfffffff007780a60<br>
+311.. settid_with_pid 0xfffffff00778205c<br>
+312.. psynch_cvclrprepost 0xfffffff0077e968c<br>
+313.. aio_fsync 0xfffffff007753324<br>
+314.. aio_return 0xfffffff00775391c<br>
+315.. aio_suspend 0xfffffff007753d20<br>
+316.. aio_cancel 0xfffffff00775298c<br>
+317.. aio_error 0xfffffff00775321c<br>
+318.. aio_read 0xfffffff0077538e4<br>
+319.. aio_write 0xfffffff007754074<br>
+320.. lio_listio 0xfffffff0077540ac<br>
+322.. iopolicysys 0xfffffff00778425c<br>
+323.. process_policy 0xfffffff0077eea10<br>
+324.. mlockall 0xfffffff00777b25c<br>
+325.. munlockall 0xfffffff00777b264<br>
+327.. issetugid 0xfffffff007780ff0<br>
+328.. __pthread_kill 0xfffffff0077867b0<br>
+329.. __pthread_sigmask 0xfffffff00778742c<br>
+330.. __sigwait 0xfffffff00778750c<br>
+331.. __disable_threadsignal 0xfffffff007786304<br>
+332.. __pthread_markcancel 0xfffffff007786324<br>
+333.. __pthread_canceled 0xfffffff007786398<br>
+334.. __semwait_signal 0xfffffff00778661c<br>
+336.. proc_info 0xfffffff0077e982c<br>
+338.. stat64 0xfffffff0075ada70<br>
+339.. fstat64 0xfffffff00775e60c<br>
+340.. lstat64 0xfffffff0075adb48<br>
+341.. stat64_extended 0xfffffff0075adaa8<br>
+342.. lstat64_extended 0xfffffff0075adb80<br>
+343.. fstat64_extended 0xfffffff00775e5f4<br>
+344.. getdirentries64 0xfffffff0075b210c<br>
+345.. statfs64 0xfffffff0075a86d0<br>
+346.. fstatfs64 0xfffffff0075a8964<br>
+347.. getfsstat64 0xfffffff0075a8dec<br>
+348.. __pthread_chdir 0xfffffff0075a9788<br>
+349.. __pthread_fchdir 0xfffffff0075a9484<br>
+350.. audit 0xfffffff00774201c<br>
+351.. auditon 0xfffffff007742024<br>
+353.. getauid 0xfffffff00774202c<br>
+354.. setauid 0xfffffff007742034<br>
+357.. getaudit_addr 0xfffffff00774203c<br>
+358.. setaudit_addr 0xfffffff007742044<br>
+359.. auditctl 0xfffffff00774204c<br>
+360.. bsdthread_create 0xfffffff0077e9424<br>
+361.. bsdthread_terminate 0xfffffff0077e94a8<br>
+362.. kqueue 0xfffffff007764c5c<br>
+363.. kevent 0xfffffff007764c74<br>
+364.. lchown 0xfffffff0075aecd0<br>
+365.. stack_snapshot 0xfffffff0077513a8<br>
+366.. bsdthread_register 0xfffffff0077e944c<br>
+367.. workq_open 0xfffffff0077e9534<br>
+368.. workq_kernreturn 0xfffffff0077e9508<br>
+369.. kevent64 0xfffffff007766f78<br>
+370.. __old_semwait_signal 0xfffffff007786444<br>
+371.. __old_semwait_signal_nocancel 0xfffffff007786490<br>
+372.. thread_selfid 0xfffffff0077e94f4<br>
+373.. ledger 0xfffffff0077a432c<br>
+374.. kevent_qos 0xfffffff007766fe0<br>
+380.. __mac_execve 0xfffffff0077723c4<br>
+381.. __mac_syscall 0xfffffff0078c906c<br>
+382.. __mac_get_file 0xfffffff0078c87d0<br>
+383.. __mac_set_file 0xfffffff0078c8e08<br>
+384.. __mac_get_link 0xfffffff0078c8a58<br>
+385.. __mac_set_link 0xfffffff0078c9060<br>
+386.. __mac_get_proc 0xfffffff0078c7f7c<br>
+387.. __mac_set_proc 0xfffffff0078c80e8<br>
+388.. __mac_get_fd 0xfffffff0078c83bc<br>
+389.. __mac_set_fd 0xfffffff0078c8a64<br>
+390.. __mac_get_pid 0xfffffff0078c7dfc<br>
+394.. setlcid 0xfffffff0077a2628<br>
+395.. getlcid 0xfffffff0077a265c<br>
+396.. read_nocancel 0xfffffff00779fdd8<br>
+397.. write_nocancel 0xfffffff0077a049c<br>
+398.. open_nocancel 0xfffffff0075aa4a0<br>
+399.. close_nocancel 0xfffffff00775daa8<br>
+400.. wait4_nocancel 0xfffffff007775d0c<br>
+401.. recvmsg_nocancel 0xfffffff0077daa54<br>
+402.. sendmsg_nocancel 0xfffffff0077d9ac4<br>
+403.. recvfrom_nocancel 0xfffffff0077da4ac<br>
+404.. accept_nocancel 0xfffffff0077d789c<br>
+405.. msync_nocancel 0xfffffff00777abdc<br>
+406.. fcntl_nocancel 0xfffffff00775a6ec<br>
+407.. select_nocancel 0xfffffff0077a158c<br>
+408.. fsync_nocancel 0xfffffff0075afa74<br>
+409.. connect_nocancel 0xfffffff0077d8274<br>
+410.. sigsuspend_nocancel 0xfffffff0077862a0<br>
+411.. readv_nocancel 0xfffffff0077a0270<br>
+412.. writev_nocancel 0xfffffff0077a0a1c<br>
+413.. sendto_nocancel 0xfffffff0077d93e8<br>
+414.. pread_nocancel 0xfffffff0077a0178<br>
+415.. pwrite_nocancel 0xfffffff0077a0838<br>
+416.. waitid_nocancel 0xfffffff007776288<br>
+417.. poll_nocancel 0xfffffff0077a2838<br>
+420.. sem_wait_nocancel 0xfffffff0077e28ec<br>
+421.. aio_suspend_nocancel 0xfffffff007753d54<br>
+422.. __sigwait_nocancel 0xfffffff007787540<br>
+423.. __semwait_signal_nocancel 0xfffffff007786660<br>
+424.. __mac_mount 0xfffffff0075a6e70<br>
+425.. __mac_get_mount 0xfffffff0078c93d8<br>
+426.. __mac_getfsstat 0xfffffff0075a8a9c<br>
+427.. fsgetpath 0xfffffff0075b5850<br>
+428.. audit_session_self 0xfffffff007742004<br>
+429.. audit_session_join 0xfffffff00774200c<br>
+430.. fileport_makeport 0xfffffff007760208<br>
+431.. fileport_makefd 0xfffffff0077604d0<br>
+432.. audit_session_port 0xfffffff007742014<br>
+433.. pid_suspend 0xfffffff0077f2020<br>
+434.. pid_resume 0xfffffff0077f2150<br>
+435.. pid_hibernate 0xfffffff0077f23a8<br>
+436.. pid_shutdown_sockets 0xfffffff0077f2698<br>
+438.. shared_region_map_and_slide_np 0xfffffff0077f28f8<br>
+439.. kas_info 0xfffffff0077f3918<br>
+440.. memorystatus_control 0xfffffff007795640<br>
+441.. guarded_open_np 0xfffffff007760bc8<br>
+442.. guarded_close_np 0xfffffff007761024<br>
+443.. guarded_kqueue_np 0xfffffff007760f9c<br>
+444.. change_fdguard_np 0xfffffff0077611a4<br>
+445.. old __proc_suppress 0xfffffff00779b65c<br>
+446.. proc_rlimit_control 0xfffffff007784abc<br>
+447.. proc_connectx 0xfffffff0077d8518<br>
+448.. proc_disconnectx 0xfffffff0077d8f64<br>
+449.. proc_peeloff 0xfffffff0077d8cfc<br>
+450.. proc_socket_delegate 0xfffffff0077d72f0<br>
+451.. proc_telemetry 0xfffffff0077a4964<br>
+452.. proc_uuid_policy 0xfffffff0077f6a9c<br>
+453.. memorystatus_get_level 0xfffffff007790a90<br>
+454.. system_override 0xfffffff0077ef5f0<br>
+455.. vfs_purge 0xfffffff0075b5954<br>
+456.. sfi_ctl 0xfffffff0077994f4<br>
+457.. sfi_pidctl 0xfffffff0077995a4<br>
+458.. coalition 0xfffffff0077a8304<br>
+459.. coalition_info 0xfffffff0077a866c<br>
+460.. necp_match_policy 0xfffffff00762317c<br>
+461.. getattrlistbulk 0xfffffff007586090<br>
+462.. placeholder for clonefile 0xfffffff0075afe1c<br>
+463.. openat 0xfffffff0075aa8f8<br>
+464.. openat_nocancel 0xfffffff0075aa5f4<br>
+465.. renameat 0xfffffff0075b14c0<br>
+466.. faccessat 0xfffffff0075ad3c8<br>
+467.. fchmodat 0xfffffff0075ae7b4<br>
+468.. fchownat 0xfffffff0075aed04<br>
+469.. fstatat 0xfffffff0075adbb4<br>
+470.. fstatat64 0xfffffff0075adc08<br>
+471.. linkat 0xfffffff0075abbac<br>
+472.. unlinkat 0xfffffff0075ac5c8<br>
+473.. readlinkat 0xfffffff0075ae060<br>
+474.. symlinkat 0xfffffff0075ac00c<br>
+475.. mkdirat 0xfffffff0075b1984<br>
+476.. getattrlistat 0xfffffff007586018<br>
+477.. proc_trace_log 0xfffffff007780690<br>
+478.. bsdthread_ctl 0xfffffff0077e94d0<br>
+479.. openbyid_np 0xfffffff0075aa958<br>
+480.. recvmsg_x 0xfffffff0077dacbc<br>
+481.. sendmsg_x 0xfffffff0077d9cd8<br>
+482.. thread_selfusage 0xfffffff007784cf8<br>
+484.. guarded_open_dprotected_np 0xfffffff007760dc4<br>
+485.. guarded_write_np 0xfffffff00776174c<br>
+486.. guarded_pwrite_np 0xfffffff00776184c<br>
+487.. guarded_writev_np 0xfffffff00776199c<br>
+488.. rename_ext 0xfffffff0075b148c<br>
+489.. mremap_encrypted 0xfffffff00777b26c<br>
+490.. netagent_trigger 0xfffffff007626fe4<br>
+491.. stack_snapshot_with_config 0xfffffff007751790<br>
+492.. microstackshot 0xfffffff007751990<br>
+493.. grab_pgo_data 0xfffffff0077f6b2c<br>
+494.. persona 0xfffffff0077a8b48<br>
+499.. work_interval_ctl 0xfffffff0077a9f50<br>
+500.. getentropy 0xfffffff00757f208<br>
+501.. necp_open 0xfffffff00761eb08<br>
+502.. necp_client_action 0xfffffff00761edd0<br>
+503.. __nexus_open 0xfffffff00780a714<br>
+504.. __nexus_register 0xfffffff00780aa30<br>
+505.. __nexus_deregister 0xfffffff00780acd4<br>
+506.. __nexus_create 0xfffffff00780ae30<br>
+507.. __nexus_destroy 0xfffffff00780b02c<br>
+508.. __nexus_get_opt 0xfffffff00780b194<br>
+509.. __nexus_set_opt 0xfffffff00780b294<br>
+510.. __channel_open 0xfffffff0077feab0<br>
+511.. __channel_get_info 0xfffffff0077fefc8<br>
+512.. __channel_sync 0xfffffff0077ff140<br>
+513.. __channel_get_opt 0xfffffff0077ffa20<br>
+514.. __channel_set_opt 0xfffffff0077ffb20<br>
+515.. ulock_wait 0xfffffff0077a94b8<br>
+516.. ulock_wake 0xfffffff0077a9d80<br>
+517.. fclonefileat 0xfffffff0075b063c<br>
+518.. fs_snapshot 0xfffffff0075b5a3c<br>
+520.. terminate_with_payload 0xfffffff007787f54</p>
