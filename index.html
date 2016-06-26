@@ -1,127 +1,102 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>iOS Hacker Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">iOS Hacker Wiki</h1>
+      <h2 class="project-tagline"></h2>
+    </section>
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" href="stylesheets/github-dark.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+    <section class="main-content">
+      <h1>
+        <div class="wrapper">
+          <header>
+            <h1 class="title"><a href="http://ioshackerwiki.com/">iOS Hacker Wiki <a></h1>
+          </header>
+          <div id="container">
+            <p class="tagline"></p>
+            <div id="main" role="main">
+              <article class="markdown-body">
+                <h1>
+        <a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome</h1>
 
-  <title>iOS Hacker Wiki</title>
-  <meta name="description" content="">
+        <p>This is the home page I guess (will think of something better to put here later) </p>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <p>If you have anything you want added to the wiki or organization feel free to send in a pull request or tweet me </p>
 
-  ga('create', 'UA-79852874-1', 'auto');
-  ga('send', 'pageview');
+        <p>-- <a href="https://twitter.com/ClevrPwn">@ClevrPwn</a></p>
+        <h1>
+        <a id="Index" class="anchor" href="#Index" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Index</h1>
+        <h1>
+        <a id="repos" class="anchor" href="#repos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>-Repos</h1>
+        <h2>
+        <a id="decrypted" class="anchor" href="#decrypted" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Decrypted Kernel Caches</h2>
+        <p>Currently you can download decrypted kernel cache's from <a href="https://github.com/iOS-10-stuffs/Decrypted-Kernels">here</a>.</p>
+        <h2>
+        <a id="disassembled" class="anchor" href="#disassembled" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Disassembled Kernel Caches</h2>
+        <p>Currently you can download disassembled kernel cache's for all iOS 10 devices from <a href="https://github.com/iOS-10-Stuffs/Disassembled-Kernels">here</a>.</p>
+        <h2>
+        <a id="headers" class="anchor" href="#headers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--iOS 10 Runtime Headers</h2>
+        <p>Currently you can download iOS 10's Runtime Headers from <a href="https://github.com/iOS-10-Stuffs/iOS10-Runtime-Headers">here</a>.</p>
+        <h1>
+          <a id="Info" class="anchor" href="#Info" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>-iOS 10 Kernel Info</h1>
+        <h2>
+        <a id="kexts-list" class="anchor" href="#kexts-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Kexts list</h2>
 
-</script>
+        <p>List of all the kexts included....pretty self explanatory </p>
 
-</head>
+        <p><a href="./kexts-list.html">Kexts List</a></p>
 
-<body>
+        <h2>
+        <a id="mach-traps-and-mig-tables" class="anchor" href="#mach-traps-and-mig-tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Mach Traps and MIG tables</h2>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title"><a href="http://ioshackerwiki.com/">iOS Hacker Wiki <a></h1>
-    </header>
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/iOS-10-stuffs" class="code">View iOS Hacker Wiki on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h1>
-<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome</h1>
+        <p>Mach system calls are commonly known as "traps"</p>
 
-<p>This is the home page I guess (will think of something better to put here later) </p>
+        <p>At the trap level, the interface to most Mach abstractions consists of messages sent to and from kernel ports representing those objects. The trap-level interfaces (such as mach_msg_overwrite_trap) and message formats are themselves abstracted in normal usage by the Mach Interface Generator (MIG). MIG is used to compile procedural interfaces to the message-based APIs, based on descriptions of those APIs.</p>
 
-<p>If you have anything you want added to the wiki or organization feel free to send in a pull request or tweet me </p>
+        <p><a href="./machtraps.html">Mach Traps and MIG tables</a></p>
 
-<p>-- <a href="https://twitter.com/ClevrPwn">@ClevrPwn</a></p>
-<h1>
-  <a id="Index" class="anchor" href="#Index" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Index</h1>
-<h1>
-  <a id="repos" class="anchor" href="#repos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>-Repos</h1>
-  <h2>
-  <a id="decrypted" class="anchor" href="#decrypted" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Decrypted Kernel Caches</h2>
-  <p>Currently you can download decrypted kernel cache's from <a href="https://github.com/iOS-10-stuffs/Decrypted-Kernels">here</a>.</p>
-  <h2>
-  <a id="disassembled" class="anchor" href="#disassembled" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Disassembled Kernel Caches</h2>
-  <p>Currently you can download disassembled kernel cache's for all iOS 10 devices from <a href="https://github.com/iOS-10-Stuffs/Disassembled-Kernels">here</a>.</p>
-  <h2>
-  <a id="headers" class="anchor" href="#headers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--iOS 10 Runtime Headers</h2>
-  <p>Currently you can download iOS 10's Runtime Headers from <a href="https://github.com/iOS-10-Stuffs/iOS10-Runtime-Headers">here</a>.</p>
-  <h1>
-    <a id="Info" class="anchor" href="#Info" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>-iOS 10 Kernel Info</h1>
-<h2>
-<a id="kexts-list" class="anchor" href="#kexts-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Kexts list</h2>
+        <h2>
+        <a id="sysctls" class="anchor" href="#sysctls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Sysctls</h2>
 
-<p>List of all the kexts included....pretty self explanatory </p>
+        <p>sysctl is an interface for examining and dynamically changing parameters in Unix-like operating systems.</p>
 
-<p><a href="./kexts-list.html">Kexts List</a></p>
+        <p><a href="./sysctls.html">Sysctls</a></p>
 
-<h2>
-<a id="mach-traps-and-mig-tables" class="anchor" href="#mach-traps-and-mig-tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Mach Traps and MIG tables</h2>
+        <h2>
+        <a id="unix-syscalls" class="anchor" href="#unix-syscalls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--UNIX Syscalls</h2>
 
-<p>Mach system calls are commonly known as "traps"</p>
+        <p>a system call is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. This may include hardware-related services (for example, accessing a hard disk drive), creation and execution of new processes, and communication with integral kernel services such as process scheduling.</p>
 
-<p>At the trap level, the interface to most Mach abstractions consists of messages sent to and from kernel ports representing those objects. The trap-level interfaces (such as mach_msg_overwrite_trap) and message formats are themselves abstracted in normal usage by the Mach Interface Generator (MIG). MIG is used to compile procedural interfaces to the message-based APIs, based on descriptions of those APIs.</p>
+        <p><a href="./syscalls.html">UNIX syscalls</a></p>
+        <h1>
+        <a id="Info" class="anchor" href="#hardware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>-Hardware Info</h1>
+        <h2>
+        <a id="unix-syscalls" class="anchor" href="#unix-syscalls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--64 bit processors and coresponding devices</h2>
 
-<p><a href="./machtraps.html">Mach Traps and MIG tables</a></p>
-
-<h2>
-<a id="sysctls" class="anchor" href="#sysctls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--Sysctls</h2>
-
-<p>sysctl is an interface for examining and dynamically changing parameters in Unix-like operating systems.</p>
-
-<p><a href="./sysctls.html">Sysctls</a></p>
-
-<h2>
-<a id="unix-syscalls" class="anchor" href="#unix-syscalls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--UNIX Syscalls</h2>
-
-<p>a system call is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. This may include hardware-related services (for example, accessing a hard disk drive), creation and execution of new processes, and communication with integral kernel services such as process scheduling.</p>
-
-<p><a href="./syscalls.html">UNIX syscalls</a></p>
-<h1>
-<a id="Info" class="anchor" href="#hardware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>-Hardware Info</h1>
-<h2>
-<a id="unix-syscalls" class="anchor" href="#unix-syscalls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>--64 bit processors and coresponding devices</h2>
-
-<p><a href="./table.html">Here</a></p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-
-      <p><a href="https://github.com/iOS-10-stuffs" class="avatar"><img src="https://avatars1.githubusercontent.com/u/19955201?v=3&amp;s=60" width="48" height="48"></a>View <a href="https://github.com/iOS-10-stuffs">iOS-10-stuffs</a> on <a href="https://www.github.com">GitHub</a></p>
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/iOS-10-stuffs/iOS-10-stuffs.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/iOS-10-stuffs/iOS-10-stuffs.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+        <p><a href="./table.html">Here</a></p>
+              </article>
+            </div>
+          </div>
+          <footer>
+            <div class="owner">
 
 
-</body>
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+
+  </body>
 </html>
