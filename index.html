@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
-    <title>iOS Hacker Wiki by citrusui</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset="utf-8">
+    <title>iOS Hacker Wiki
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="stylesheets/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="stylesheets/stylesheet.css" rel="stylesheet">
+    <link href="stylesheets/github-light.css" rel="stylesheet">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">iOS Hacker Wiki</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/citrusui/ios10" class="btn">View on GitHub</a>
-      <a href="https://github.com/citrusui/ios10/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/citrusui/ios10/tarball/master" class="btn">Download .tar.gz</a>
+      <h1 class="project-name">iOS Hacker Wiki
+      </h1>
+      <h2 class="project-tagline">
+      </h2>
+      <a href="https://github.com/citrusui/ios10" class="btn">View on GitHub
+      </a>
     </section>
-
     <section class="main-content">
-      <h1>
-<a id="welcome-to-the-ios-hacker-wiki" class="anchor" href="#welcome-to-the-ios-hacker-wiki" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to the iOS Hacker Wiki</h1>
-
-<p>If you have anything you want added to this wiki, feel free to open a <a href="https://github.com/iOS-10-Stuffs/iOS-10-stuffs.github.io/pulls">Pull Request</a> or Tweet me <a href="https://twitter.com/ClevrPwn">@ClevrPwn</a>.</p>
-
-<h2>
-<a id="kexts-list" class="anchor" href="#kexts-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Kexts list</h2>
-
-<p>List of all the kexts included....pretty self explanatory.</p>
-
-<p><a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/Kexts%20list">Kexts List</a></p>
-
-<h2>
-<a id="mach-traps-and-mig-tables" class="anchor" href="#mach-traps-and-mig-tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mach Traps and MIG tables</h2>
-
-<p>Mach system calls are commonly known as "traps".</p>
-
-<p>At the trap level, the interface to most Mach abstractions consists of messages sent to and from kernel ports representing those objects. The trap-level interfaces (such as mach_msg_overwrite_trap) and message formats are themselves abstracted in normal usage by the Mach Interface Generator (MIG). MIG is used to compile procedural interfaces to the message-based APIs, based on descriptions of those APIs.</p>
-
-<p><a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/Mach%20Traps%20and%20MIG%20tables">Mach Traps and MIG tables</a></p>
-
-<h2>
-<a id="sysctls" class="anchor" href="#sysctls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sysctls</h2>
-
-<p><code>sysctl</code> is an interface for examining and dynamically changing parameters in UNIX-like operating systems.</p>
-
-<p><a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/Sysctls">sysctls</a></p>
-
-<h2>
-<a id="unix-syscalls" class="anchor" href="#unix-syscalls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>UNIX Syscalls</h2>
-
-<p>A system call is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. This may include hardware-related services (for example, accessing a hard disk drive), creation and execution of new processes, and communication with integral kernel services such as process scheduling.</p>
-
-<p><a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/UNIX%20syscalls">UNIX syscalls</a></p>
-
+      <h1>Welcome to the iOS Hacker Wiki
+      </h1>
+      <p>If you have anything you want added to this wiki, feel free to open a 
+        <a href="https://github.com/iOS-10-Stuffs/iOS-10-stuffs.github.io/pulls">Pull Request
+        </a> or Tweet me 
+        <a href="https://twitter.com/ClevrPwn">@ClevrPwn
+        </a>.
+      </p>
+      <h2>
+        <a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/Kexts%20list">Kext list
+        </a>
+      </h2>
+      <p>List of all the kexts included... pretty self explanatory.
+      </p>
+      <h2>
+        <a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/Mach%20Traps%20and%20MIG%20tables">Mach Traps and MIG tables
+        </a>
+      </h2>
+      <p>Mach system calls are commonly known as "traps".
+      </p>
+      <p>At the trap level, the interface to most Mach abstractions consists of messages sent to and from kernel ports representing those objects. The trap-level interfaces (such as 
+        <code>mach_msg_overwrite_trap
+        </code>) and message formats are themselves abstracted in normal usage by the Mach Interface Generator (MIG). MIG is used to compile procedural interfaces to the message-based APIs, based on descriptions of those APIs.
+      </p>
+      <h2>
+        <a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/Sysctls">sysctls
+        </a>
+      </h2>
+      <p>
+        <code>sysctl
+        </code> is an interface for examining and dynamically changing parameters in UNIX-like operating systems.
+      </p>
+      <h2>
+        <a href="https://bitbucket.org/clevrpwn/ios-10-stuffs/wiki/UNIX%20syscalls">UNIX Syscalls
+        </a>
+      </h2>
+      <p>A system call is the programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. This may include hardware-related services (for example, accessing a hard disk drive), creation and execution of new processes, and communication with integral kernel services such as process scheduling.
+      </p>
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/citrusui/ios10">iOS Hacker Wiki</a> is maintained by <a href="https://github.com/citrusui">citrusui</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        <span class="site-footer-credits">This page was generated by 
+          <a href="https://pages.github.com">GitHub Pages
+          </a> using the 
+          <a href="https://github.com/jasonlong/cayman-theme">Cayman theme
+          </a> by 
+          <a href="https://twitter.com/jasonlong">Jason Long
+          </a>.
+        </span>
       </footer>
-
     </section>
-
-  
   </body>
 </html>
