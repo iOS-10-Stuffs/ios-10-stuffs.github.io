@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kext List
+title: Core Team
 ---
 
 ## Core Team
