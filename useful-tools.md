@@ -7,7 +7,7 @@ title: Useful Tools
 
 ### jtool
 
-  The 'jtool' command is meant to meet and exceed the functionality to XCode's otool(1), picking up along the way additional 
+  The ' jtool ' command is meant to meet and exceed the functionality to XCode's otool(1), picking up along the way additional 
   Mach-O commands such as atos(1), dyldinfo(1), nm(1), segedit(1), pagestuff(1), strings(1) , and even codesign(1) and the 
   informal ldid. jtool also provides novel features, such in-binary search functionality, symbol injection and a disassembler 
   functionality with (limited but constantly improving) emulation capabilities. It also provides color output. Most importantly,
