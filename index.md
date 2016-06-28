@@ -17,7 +17,7 @@ Disassembled kernels for a few devices, more to come. Feel free to contribute fo
 ## More Information
 
 ### [Useful Tools](useful-tools/)
-Tools That Helped Us Along The Way
+Tools that helped us along the way.
 
 ### [Kext List](kext-list/)
 List of all the kexts included... pretty self explanatory.
